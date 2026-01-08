@@ -98,8 +98,7 @@ class AdicionarAoCarrinho(View):
                 'slug': slug,
                 'imagem': imagem,
             }
- 
-        # pprint(carrinho)
+
         self.request.session.save()
  
         messages.success(
